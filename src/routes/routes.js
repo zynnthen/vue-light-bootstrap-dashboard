@@ -11,6 +11,7 @@ import Icons from 'src/pages/Icons.vue'
 import Maps from 'src/pages/Maps.vue'
 import Notifications from 'src/pages/Notifications.vue'
 import Upgrade from 'src/pages/Upgrade.vue'
+import TransactionList from 'src/module/transactions/pages/TransactionsList.vue'
 
 const routes = [
   {
@@ -34,9 +35,9 @@ const routes = [
         component: UserProfile
       },
       {
-        path: 'table-list',
-        name: 'Table List',
-        component: TableList
+        path: 'transaction-list',
+        name: 'Transaction List',
+        component: TransactionList
       },
       {
         path: 'typography',
