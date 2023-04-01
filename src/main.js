@@ -19,6 +19,12 @@ import App from "./App.vue";
 
 // LightBootstrap plugin
 import LightBootstrap from "./light-bootstrap-main";
+// Bootstrap Vue
+import { BootstrapVue } from 'bootstrap-vue'
+import './assets/sass/boostrap-vue.scss'
+// Sweet Alert
+import VueSweetalert2 from "vue-sweetalert2";
+import "sweetalert2/dist/sweetalert2.min.css";
 
 // router setup
 import routes from "./routes/routes";
@@ -27,6 +33,8 @@ import "./registerServiceWorker";
 // plugin setup
 Vue.use(VueRouter);
 Vue.use(LightBootstrap);
+Vue.use(BootstrapVue)
+Vue.use(VueSweetalert2);
 
 // configure router
 const router = new VueRouter({

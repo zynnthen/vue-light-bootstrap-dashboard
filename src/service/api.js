@@ -2,10 +2,10 @@
 import axios from 'axios';
 // import { forceRefreshToken } from "../utils/auth";
 // import session from "../utils/session";
-// import CONSTANTS from '../utils/constants';
+import CONSTANTS from 'src/utils/constants';
 
 const api = axios.create({
-    baseURL: "http://localhost:3000/api",
+    baseURL: CONSTANTS.API_END_POINT,
     timeout: 0 // default is `0` (no timeout)
 });
 
