@@ -1,5 +1,6 @@
 export default {
     API_END_POINT: "http://localhost:3000/api/",
+    APP_SOCKET_ENDPOINT: 'http://localhost:3000',
 
     DAY_GROUP: 60, // 1 minute
     WEEK_GROUP: 3600, // 1 hour

@@ -10,6 +10,10 @@
         <i class="nc-icon nc-circle-09"></i>
         <p>User Profile</p>
       </sidebar-link> -->
+      <sidebar-link to="/admin/dashboard">
+        <i class="nc-icon nc-circle-09"></i>
+        <p>Dashboard</p>
+      </sidebar-link>
       <sidebar-link to="/admin/transaction-list">
         <i class="nc-icon nc-notes"></i>
         <p>Transaction list</p>
@@ -50,28 +54,26 @@
     </div>
   </div>
 </template>
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>
 <script>
-  import TopNavbar from './TopNavbar.vue'
-  import ContentFooter from './ContentFooter.vue'
-  import DashboardContent from './Content.vue'
-  import MobileMenu from './MobileMenu.vue'
-  export default {
-    components: {
-      TopNavbar,
-      ContentFooter,
-      DashboardContent,
-      MobileMenu
-    },
-    methods: {
-      toggleSidebar () {
-        if (this.$sidebar.showSidebar) {
-          this.$sidebar.displaySidebar(false)
-        }
+import TopNavbar from './TopNavbar.vue'
+import ContentFooter from './ContentFooter.vue'
+import DashboardContent from './Content.vue'
+import MobileMenu from './MobileMenu.vue'
+export default {
+  components: {
+    TopNavbar,
+    ContentFooter,
+    DashboardContent,
+    MobileMenu
+  },
+  methods: {
+    toggleSidebar() {
+      if (this.$sidebar.showSidebar) {
+        this.$sidebar.displaySidebar(false)
       }
     }
   }
+}
 
 </script>

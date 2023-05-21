@@ -11,13 +11,14 @@ import Icons from 'src/pages/Icons.vue'
 import Maps from 'src/pages/Maps.vue'
 import Notifications from 'src/pages/Notifications.vue'
 import Upgrade from 'src/pages/Upgrade.vue'
+import Dashboard from 'src/module/dashboard/pages/Dashboard.vue'
 import TransactionList from 'src/module/transactions/pages/TransactionsList.vue'
 
 const routes = [
   {
     path: '/',
     component: DashboardLayout,
-    redirect: '/admin/overview'
+    redirect: '/admin/dashboard'
   },
   {
     path: '/admin',
@@ -33,6 +34,11 @@ const routes = [
         path: 'user',
         name: 'User',
         component: UserProfile
+      },
+      {
+        path: 'dashboard',
+        name: 'Dashboard',
+        component: Dashboard
       },
       {
         path: 'transaction-list',
