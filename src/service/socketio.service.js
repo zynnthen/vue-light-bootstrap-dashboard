@@ -7,8 +7,6 @@ class SocketioService {
 
     setupSocketConnection() {
         this.socket = io(CONSTANTS.APP_SOCKET_ENDPOINT);
-
-        this.socket.emit('my message', 'Hello there from Vue.');
     }
 
     barcodeListener(key) {
