@@ -21,7 +21,7 @@
                   <b-button class="btn m-1" size="sm" variant="outline-primary" @click="onDisplayTransactions()">
                     Display Transactions
                   </b-button>
-                  <b-button class="btn m-1" size="sm" variant="info" @click="onDownloadCsv()">
+                  <b-button class="btn m-1" size="sm" variant="info" @click="onDownloadCsv()" hidden>
                     Download CSV
                   </b-button>
                 </div>
@@ -55,7 +55,7 @@ import { getSummarizedTransactions } from "src/module/transactions/api/transacti
 import LTable from 'src/components/Table.vue'
 import Card from 'src/components/Cards/Card.vue'
 const tableColumns = ['transactionId', 'scanner', 'barcode', 'createdAt']
-const tableSummaryColumns = ['scanner', 'barcode', 'count']
+const tableSummaryColumns = ['barcode', 'in', 'out', 'balance']
 
 export default {
   components: {
