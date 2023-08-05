@@ -13,6 +13,7 @@ import Notifications from 'src/pages/Notifications.vue'
 import Upgrade from 'src/pages/Upgrade.vue'
 import Dashboard from 'src/module/dashboard/pages/Dashboard.vue'
 import TransactionList from 'src/module/transactions/pages/TransactionsList.vue'
+import Settings from 'src/module/settings/pages/Settings.vue'
 
 const routes = [
   {
@@ -26,16 +27,6 @@ const routes = [
     redirect: '/admin/overview',
     children: [
       {
-        path: 'overview',
-        name: 'Overview',
-        component: Overview
-      },
-      {
-        path: 'user',
-        name: 'User',
-        component: UserProfile
-      },
-      {
         path: 'dashboard',
         name: 'Dashboard',
         component: Dashboard
@@ -44,6 +35,21 @@ const routes = [
         path: 'transaction-list',
         name: 'Transaction List',
         component: TransactionList
+      },
+      {
+        path: 'settings',
+        name: 'Settings',
+        component: Settings
+      },
+      {
+        path: 'overview',
+        name: 'Overview',
+        component: Overview
+      },
+      {
+        path: 'user',
+        name: 'User',
+        component: UserProfile
       },
       {
         path: 'typography',
